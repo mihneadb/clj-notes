@@ -6,7 +6,12 @@
             (html5
               [:head
                [:title "clj-notes"]
-               (include-css "/css/reset.css")]
+               (include-css "/css/notes.css")] ; FIXME!
               [:body
                [:div#wrapper
                 content]]))
+
+(defpartial render-note [{:keys [title text]}]
+  [:div#note
+    [:h3 title]
+    [:p text]])

@@ -4,6 +4,9 @@
   (:use [noir.core :only [defpage]]
         [hiccup.core :only [html]]))
 
-(defpage "/welcome" []
+(def note1 {:title "First note", :text "Hello, world!"})
+
+(defpage "/" []
          (common/layout
-           [:p "Welcome to clj-notes"]))
+           [:h1 "Welcome to clj-notes"]
+           (common/render-note note1)))
