@@ -1,4 +1,4 @@
-(ns clj-notes.views.welcome
+(ns clj-notes.views.notes
   (:require [clj-notes.views.common :as common]
             [noir.content.getting-started])
   (:use [noir.core :only [defpage]]
@@ -9,4 +9,4 @@
 (defpage "/" []
          (common/layout
            [:h1 "Welcome to clj-notes"]
-           (common/render-note note1)))
+           (map common/render-note common/notes)))
