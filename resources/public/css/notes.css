@@ -1,11 +1,27 @@
 html {
-    background-color: rgb(155, 188, 155);
+    background-color: rgb(188, 221, 188);
+    padding: 10px 10px 10px 10px;
 }
 
 #note {
     border: solid;
+    border-width: 5px;
     border-radius: 10px;
     border-color: rgb(80, 80, 80);
-    background-color: rgb(155, 155, 155);
-    padding-left: 10px;
+    background-color: rgb(188, 188, 188);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+#text {
+    text-indent: 20px;
+    font-style: italic;
+    font-family: cursive;
+}
+
+#title {
+    border-bottom: solid;
+    border-width: 1px;
 }

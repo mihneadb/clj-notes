@@ -13,8 +13,8 @@
 
 (defpartial render-note [{:keys [title text]}]
   [:div#note
-    [:h3 title]
-    [:p text]])
+    [:h3#title title]
+    [:p#text text]])
 
 (defn randint [limit]
   (inc (int (* (Math/random) limit))))
